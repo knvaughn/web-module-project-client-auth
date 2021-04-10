@@ -23,7 +23,7 @@ const Login = () => {
         axiosWithAuth().post("http://localhost:5000/api/login", credentials)
         .then(response => {
             console.log(response)
-            localStorage.setItem('loginToken', response.data.payload)
+            localStorage.setItem('loginToken', response.data.payload);
             history.push("/friends");
         })
         .catch(error => {
@@ -41,6 +41,7 @@ const Login = () => {
                         name="username"
                         value={credentials.username}
                         onChange={handleChange}
+                        required
                     />
                 </label>
                 <label>
@@ -50,6 +51,7 @@ const Login = () => {
                         name="password"
                         value={credentials.password}
                         onChange={handleChange}
+                        required
                     />
                 </label>
                 <button>Log in</button>

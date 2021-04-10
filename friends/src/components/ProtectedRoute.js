@@ -3,7 +3,7 @@ import {Redirect, Route} from 'react-router-dom';
 
 const ProtectedRoute = ({component: Component, ...props}) => {
     return <Route {...props} render={()=>{
-        if(localStorage.getItem("token") === null) {
+        if(localStorage.getItem('loginToken') === null) {
             return <Redirect to="/login" />
         }
         return <Component />
