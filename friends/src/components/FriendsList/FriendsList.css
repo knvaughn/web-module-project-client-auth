@@ -1,0 +1,84 @@
+.FriendsList {
+    position: relative;
+    box-shadow: 0 20px 2rem 0 rgba(0, 0, 0, 0.05);
+    padding: 100px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 650px;
+}
+
+.FriendsList:before {
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px) saturate(100%) contrast(55%) brightness(130%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+}
+
+.FriendsList h1 {
+    color: #141442;
+    font-size: 3rem;
+    margin: 0;
+    z-index: 997;
+    position: relative;
+}
+
+.FriendsList form {
+    position: relative;
+    z-index: 998;
+    background: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.FriendsList label {
+    display: block;
+    font-weight: 700;
+    color: #141442;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.FriendsList input {
+    display: block;
+    border: 2px solid #f1f1f1;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.FriendsList input:focus {
+    outline: none;
+    box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.05);
+}
+
+.FriendsList button {
+    display: block;
+    background: #27215f;
+    color: #fff;
+    width: 100%;
+    border: none;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    transition: all .2s linear;
+}
+
+.FriendsList button:hover {
+    background: #3d1996;
+    cursor: pointer;
+}
+
+.FriendsList button:focus {
+    outline: none;
+    box-shadow: 0 5px 1rem 0 rgba(0, 0, 0, 0.3);
+}

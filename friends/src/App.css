@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font-family: 'Nunito', sans-serif;
+vertical-align: baseline;  
+}
+a:link, a:visited, a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+.App {
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #dbe6f9, #fad3e8, #e4e1f2, #d5eaf8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding: 100px 20px;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav:before {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px) saturate(100%) contrast(55%) brightness(130%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0 20px;
+  z-index: 999;
+}
+
+nav ul a {
+  display: inline-block;
+  padding: 25px;
+  color: #141442;
+  font-weight: 700;
+  transition: all .2s linear;
+}
+
+nav ul a:hover {
+  color: #4317a5;
+}
