@@ -1,13 +1,14 @@
 import React from 'react';
+import './Friend.css';
 
 const Friend = (props) => {
     const {friend} = props;
 
     return (
-        <div>
-            <h3>{friend.name}</h3>
-            <p>{friend.age}</p>
-            <p>{friend.email}</p>
+        <div className="Friend">
+            <h2>{friend.name}</h2>
+            <p>Age: {friend.age}</p>
+            <a href={`mailto:${friend.email}`}>{friend.email}</a>
         </div>
     );
 }

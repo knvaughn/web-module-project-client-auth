@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {axiosWithAuth} from '../../utils/axiosWithAuth';
 import {useHistory} from 'react-router-dom';
+import './Login.css';
 
 const initialCredentials = {
     username: '',
@@ -32,7 +33,8 @@ const Login = () => {
     }
 
     return (
-        <div>
+        <div className="Login">
+            <h1>Login</h1>
             <form onSubmit={login}>
                 <label>
                     Username

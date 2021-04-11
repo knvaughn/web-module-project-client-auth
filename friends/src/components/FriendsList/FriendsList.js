@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import Friend from '../Friend/Friend';
+import './FriendsList.css';
 
 const initialFriend = {
     name: '',
@@ -38,9 +39,9 @@ const FriendsList = () => {
     }
 
     return (
-        <div>
+        <div className="FriendsList">
             <div>
-                <h2>Add Friend</h2>
+                <h1>Add Friend</h1>
                 <form onSubmit={addFriend}>
                     <label>
                         Name

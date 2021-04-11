@@ -14,17 +14,19 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <ul>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-          <li>
-            <Link to="/login" onClick={logout}>Logout</Link>
-          </li>
-          <li>
-            <Link to="/friends">Friends</Link>
-          </li>
-        </ul>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
+            <li>
+              <Link to="/login" onClick={logout}>Logout</Link>
+            </li>
+            <li>
+              <Link to="/friends">Friends</Link>
+            </li>
+          </ul>
+        </nav>
         <Switch>
           <ProtectedRoute exact path="/friends" component={FriendsList} />
           <Route path="/login" component={Login} />
